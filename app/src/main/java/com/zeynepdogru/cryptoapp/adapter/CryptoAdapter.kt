@@ -13,7 +13,7 @@ import com.zeynepdogru.cryptoapp.model.Crypto
 
  class CryptoAdapter( var cryptoList: ArrayList<Crypto>, private var onClick: (position: Int)->Unit) :RecyclerView.Adapter<CryptoAdapter.CryptoViewHolder>() {
 
-    private val colors: Array<String> = arrayOf("#13bd27","#29c1e1","#b129e1","#d3df13","#f6bd0c","#a1fb93","#0d9de3","#ffe48f")
+    private val colors: Array<String> = arrayOf("#8dcd88","#e1bebe","#8fc6d4","#bda5c8","#c8e1a2","#99badd","#0d9de3","#ffe48f")
 
     class CryptoViewHolder(var view: ItemCryptoBinding): RecyclerView.ViewHolder(view.root) {
 
