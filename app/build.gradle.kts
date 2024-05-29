@@ -5,7 +5,7 @@ plugins {
 
     alias(libs.plugins.kotlin.parcelize)
     alias(libs.plugins.androidx.navigation.safeargs.kotlin)
-   // id(libs.plugins.agconnect.get().pluginId)
+    id(libs.plugins.agconnect.get().pluginId)
 
 }
 
@@ -23,39 +23,28 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
-        }
-    }
-
-
-
 
     signingConfigs {
-        getByName("debug") {
-            storeFile = file("Project2024.jks")
+        create("config") {
+
             keyAlias = "yalova2024"
             keyPassword = "yalova2024"
+            storeFile = file("project2024.jks")
             storePassword = "yalova2024"
-            // v1SigningEnabled v2SigningEnabled
         }
     }
 
     buildTypes {
-        getByName("debug") {
-            signingConfig = signingConfigs.getByName("debug")
-        }
-        release {
+        release{
+            signingConfig=signingConfigs.getByName("config")
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+        }
+        debug{
+            signingConfig=signingConfigs.getByName("config")
         }
     }
 

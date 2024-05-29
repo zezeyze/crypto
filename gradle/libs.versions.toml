@@ -18,7 +18,7 @@ navigationSafeargs = "2.7.7"
 agconnect = "1.9.1.300"
 agconnect-agcp = "1.7.1.300"
 gradle = "8.0.0"
-hmsPush="6.12.0.300"
+hmsPush="6.11.0.300"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }

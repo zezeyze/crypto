@@ -27,20 +27,20 @@
 	},
 	"client":{
 		"cp_id":"30090000036485230",
-		"product_id":"388421841222177907",
-		"client_id":"1427949068612565312",
-		"client_secret":"9125126D20EF9AD70AADF570712F73C4183A76FD4C6B603A92CDE177F830CB1F",
-		"project_id":"388421841222177907",
-		"app_id":"111081983",
-		"api_key":"DQEDAIFKecbKbUNzmXQrxUSskP5N0z3e/l8kW0yPdG2v24w5dJ6ztFcVeU1FtuG31qD6EP0RN+UxXpJmCdoJrx8fUc0Yy+vFcxth3w==",
+		"product_id":"388421841222190975",
+		"client_id":"1432035110621837632",
+		"client_secret":"4135F719BB7742E451A7F40FD8919E08DBE3AA9A385C1D40334F437B7102320B",
+		"project_id":"388421841222190975",
+		"app_id":"111127709",
+		"api_key":"DQEDAIbAGyNlOyXFV1l3OcMHOwW383NCSovvwkKudWQOG2edHl0aCv4IvIu1Ml52xo/x0NTrXIcXA71dKBt5vhFrzC7uAv6aEACz8Q==",
 		"package_name":"com.zeynepdogru.cryptoapp"
 	},
 	"oauth_client":{
-		"client_id":"111081983",
+		"client_id":"111127709",
 		"client_type":1
 	},
 	"app_info":{
-		"app_id":"111081983",
+		"app_id":"111127709",
 		"package_name":"com.zeynepdogru.cryptoapp"
 	},
 	"service":{
@@ -81,15 +81,15 @@
 		{
 			"package_name":"com.zeynepdogru.cryptoapp",
 			"client":{
-				"app_id":"111081983"
+				"app_id":"111127709"
 			},
 			"app_info":{
 				"package_name":"com.zeynepdogru.cryptoapp",
-				"app_id":"111081983"
+				"app_id":"111127709"
 			},
 			"oauth_client":{
 				"client_type":1,
-				"client_id":"111081983"
+				"client_id":"111127709"
 			}
 		}
 	]
