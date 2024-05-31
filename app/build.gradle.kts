@@ -86,4 +86,6 @@ android {
 
             implementation(libs.agconnect.core)
             implementation(libs.hms.push.kit)
+            implementation(libs.hms.ads.prime)
+
         }

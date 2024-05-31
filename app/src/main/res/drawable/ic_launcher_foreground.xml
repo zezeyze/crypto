@@ -4,11 +4,9 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Madeni para şekli -->
     <path
         android:fillColor="#F0C905"
         android:pathData="M54,0C24.177,0 0,24.177 0,54s24.177,54 54,54s54,-24.177 54,-54s-24.177,-54 -54,-54z" />
-    <!-- Detaylar (örneğin, küçültülmüş yıldız) -->
     <path
         android:fillColor="#FFFFFF"
         android:pathData="M54,34l-4,11h-14l11,7l-6,13l13,-8l13,8l-6,-13l11,-7h-14z"

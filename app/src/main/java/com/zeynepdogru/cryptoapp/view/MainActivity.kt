@@ -8,11 +8,14 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.huawei.hms.aaid.HmsInstanceId
-import com.huawei.hms.common.ApiException
 import com.zeynepdogru.cryptoapp.R
-
+import com.huawei.hms.aaid.HmsInstanceId
+import com.huawei.hms.ads.HwAds
+import com.huawei.hms.common.ApiException
 class MainActivity : AppCompatActivity() {
+    companion object{
+        lateinit var activity: MainActivity
+    }
 
     private val REQUEST_CODE = 1001
     private val tag="HUAWEI_PUSH"
@@ -24,7 +27,8 @@ class MainActivity : AppCompatActivity() {
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.POST_NOTIFICATIONS), REQUEST_CODE)
         }
         getToken()
-
+        // Initialize the Petal Ads SDK.
+        HwAds.init(this)
     }
     private fun getToken() {
         object : Thread() {

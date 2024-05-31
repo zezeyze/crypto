@@ -19,6 +19,7 @@ agconnect = "1.9.1.300"
 agconnect-agcp = "1.7.1.300"
 gradle = "8.0.0"
 hmsPush="6.11.0.300"
+adsPrime = "3.4.71.300"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -42,6 +43,7 @@ agconnect-core = { group = "com.huawei.agconnect", name = "agconnect-core", vers
 agconnect-agcp = { group = "com.huawei.agconnect", name = "agcp", version.ref = "agconnect-agcp" }
 tools-gradle = { group = "com.android.tools.build", name = "gradle", version.ref = "gradle" }
 hms-push-kit = { group = "com.huawei.hms", name = "push", version.ref = "hmsPush" }
+hms-ads-prime = { group = "com.huawei.hms", name = "ads-prime", version.ref = "adsPrime" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
