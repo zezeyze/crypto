@@ -43,7 +43,7 @@ class CryptoAdapter( var cryptoList: ArrayList<Crypto>,
             onClick(position)
         }
         holder.itemView.setBackgroundColor(Color.parseColor(colors[position % 8]))
-        holder.view.titleTV.text = cryptoList[position].price_usd
+        holder.view.titleTV.text = cryptoList[position].name
 
         holder.view.priceTV.setOnClickListener {
             if(HomeFragment.interstitialAd!=null && HomeFragment.interstitialAd!!.isLoaded){
