@@ -4,7 +4,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.home.HomeFragment">
+    tools:context=".view.home.HomeFragment"
+    app:cardCornerRadius="25dp"
+    >
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -25,7 +27,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:visibility="gone" />
+        android:visibility="gone"
+        />
 
     <com.huawei.hms.ads.banner.BannerView
         android:id="@+id/hw_banner_view"

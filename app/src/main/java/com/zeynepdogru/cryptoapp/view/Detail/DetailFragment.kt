@@ -25,7 +25,7 @@ class DetailFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_detail,container, false)
+       binding = DataBindingUtil.inflate(inflater, R.layout.fragment_detail,container, false)
         viewModel.findByName(args.crypto.name)
         initUI()
         // Inflate the layout for this fragment

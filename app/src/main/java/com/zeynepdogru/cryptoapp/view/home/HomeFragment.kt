@@ -58,6 +58,7 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         return binding.root
     }
+
     private fun setObserves(){
         viewModel.productData.observe(viewLifecycleOwner) { list ->
             val cryptoAdapter= CryptoAdapter(arrayListOf()) { position ->
